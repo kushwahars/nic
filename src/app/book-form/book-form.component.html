@@ -1,0 +1,37 @@
+<form #formData="ngForm" (ngSubmit)="save(formData.value)">
+    <div class="form-group">
+    <label for="title">Title</label>
+    <input ngModel name="title" id="title" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+    <label for="isbn">ISBN</label>
+    <input ngModel name="isbn" id="isbn" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+    <label for="pagecount">Pages</label>
+    <input ngModel name="pagecount" id="pagecount" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+    <label for="thumbnailUrl">Image</label>
+    <input ngModel name="thumbnailUrl"  id="thumbnailUrl" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+    <label for="shortDescription">Description</label>
+    <input ngModel name="shortDescription" id="shortDescription" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+    <label for="status">Status</label>
+    <input ngModel name="status" id="status" type="text" class="form-control">
+    </div>
+           
+    <div class="form-group">
+    <label for="author">Author</label>
+    <input ngModel name="author" id="author" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+    <label for="categories">Categories</label>
+    <input ngModel name="categories" id="categories" type="text" class="form-control">
+    </div>
+    <button class="btn btn-primary">Save</button>
+      {{formData.value | json}}
+      </form>

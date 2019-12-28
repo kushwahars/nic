@@ -1,0 +1,9 @@
+<div class="card mt-3"  style="width:18rem;">
+    <img [src]="book.thumbnailUrl" class="card-img-top" >
+    <div class="card-body">
+        <h5 class="card-title">{{book.title}}</h5>
+        <p class="card-text">{{book.shortDescription}}</p>
+        <button class="btn btn-primary btn-block" (click)="AddToCart(book)">Add to Cart</button>
+    </div>    
+</div> 
+ 
